@@ -18,7 +18,7 @@ export default function Home() {
         <Separator orientation="vertical" />
         <a href="/ments/third">Pancake</a>
         <Separator orientation="vertical" />
-        <a href="/ments/third">Lasagna</a>
+        <a href="/ments/fourth">Lasagna</a>
       </div> 
     </main>
   )
