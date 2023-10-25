@@ -11,7 +11,7 @@ export default function Third() {
       <div>
       <div className="relative h-[350px] sm:h-[450px]">
     <img
-      src="https://i.imgur.com/fyjCkQF.jpg"
+      src="https://i.imgur.com/eBUfjmA.jpg"
       alt=""
       width={250}
       height={250}
@@ -19,7 +19,7 @@ export default function Third() {
     />
 
     <img
-          src="https://i.imgur.com/fyjCkQF.jpg"
+          src="https://i.imgur.com/eBUfjmA.jpg"
           alt=""
           width={250}
           height={250}

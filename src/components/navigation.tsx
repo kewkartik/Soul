@@ -56,7 +56,7 @@ export function Navigation() {
                 <ListItem href="/ments/third" title="Pancake">
                   Pancake
                 </ListItem>
-                <ListItem href="/ments/third" title="Lasagna">
+                <ListItem href="/ments/fourth" title="Lasagna">
                   Lasagna
                 </ListItem>
               </ul>

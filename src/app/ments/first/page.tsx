@@ -18,7 +18,7 @@ export default function Practice1() {
   return (
       <main className="flex flex-row flex-wrap mx-auto md:px-32 md:py-24">
           <div className="p-6">
-          <a href="#" className="group block">
+          <a href="/ments/second" className="group block">
   <div className="relative h-[350px] sm:h-[450px]">
     <Image
       src="https://i.imgur.com/TvgTExH.jpg"
@@ -51,7 +51,7 @@ export default function Practice1() {
 </a>
           </div>
           <div className="p-4">
-          <a href="#" className="group block">
+          <a href="/ments/third" className="group block">
   <div className="relative h-[350px] sm:h-[450px]">
     <img
           src="https://i.imgur.com/fyjCkQF.jpg"
@@ -84,7 +84,7 @@ export default function Practice1() {
 </a>
           </div>
           <div className="p-6">
-          <a href="#" className="group block">
+          <a href="/ments/fourth" className="group block">
   <div className="relative h-[350px] sm:h-[450px]">
     <img
           src="https://i.imgur.com/eBUfjmA.jpg"
