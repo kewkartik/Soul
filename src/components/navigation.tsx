@@ -17,7 +17,7 @@ export function Navigation() {
   return (
     <NavigationMenu>
       <Avatar className="mx-auto max-w-7xl flex flex-1 justify-items-start">
-        <Link className="pl-6 xl:pl-0 pt-1 text-xl font-sans font-bold" href="/"> PPL Lab </Link>
+        <Link className="pl-6 xl:pl-0 pt-1 text-xl font-sans font-bold" href="/"> Autisitc Recipes </Link>
       </Avatar>
         <NavigationMenuList>
           <NavigationMenuItem>
@@ -28,11 +28,11 @@ export function Navigation() {
                   <NavigationMenuLink asChild>
                     <a
                       className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                      href="https://github.com/kewkartik/ppl"
+                      href="https://github.com/kewkartik/Soul"
                     >
                       <Star className="h-6 w-6" />
                       <div className="mb-2 mt-4 text-lg font-medium">
-                      PPL Assignments
+                      Autisitc Recipes
                       </div>
                       <p className="text-sm leading-tight text-muted-foreground">  
                       Found it useful! Star the PPl repo.
@@ -44,17 +44,20 @@ export function Navigation() {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Practice</NavigationMenuTrigger>
+            <NavigationMenuTrigger>Recipes</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="p-6 md:w-[300px] space-y-2">
-                <ListItem href="/ments/first" title="First Assignment">
-                  Basic logical operations
+                <ListItem href="/ments/first" title="All recipes">
+                  All recipes
                 </ListItem>
-                <ListItem href="/ments/second" title="Second Assignment">
-                  Operators
+                <ListItem href="/ments/second" title="Pepe Pizza">
+                  Pepe Pizza
                 </ListItem>
-                <ListItem href="/ments/third" title="Third Assignment">
-                  if, elif & else
+                <ListItem href="/ments/third" title="Pancake">
+                  Pancake
+                </ListItem>
+                <ListItem href="/ments/third" title="Lasagna">
+                  Lasagna
                 </ListItem>
               </ul>
             </NavigationMenuContent>

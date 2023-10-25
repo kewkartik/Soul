@@ -1,69 +1,121 @@
   "use client";
 
-  import React, { useState } from "react";
   import { Input } from "@/components/ui/input";
   import { Button } from "@/components/ui/button";
+  import Image from 'next/image'
 
-  export default function Practice1() {
-    const [num1, setNum1] = useState("");
-    const [result, setResult] = useState("");
-    const [salaryPayable, setSalaryPayable] = useState("");
+  import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card"
 
-    const isValidNumber = (value:any) => /^\d*\.?\d*$/.test(value);
 
-    const calculate = async (op:any) => {
-      if (isValidNumber(num1)) {
-        const response = await fetch(`/api/${op}?basic_pay=${num1}`);
-        const data = await response.json();
-        setResult(data.result.toLocaleString("en-IN", { style: "currency", currency: "INR" }));
-        setSalaryPayable(data.salary_payable.toLocaleString("en-IN", { style: "currency", currency: "INR" }));
-      } else {
-        setResult("Bruh! Please those are not numbers.");
-        setSalaryPayable("Bruh! Please those are not numbers.");
-      }
-    };
+export default function Practice1() {
+  return (
+      <main className="flex flex-row flex-wrap mx-auto md:px-32 md:py-24">
+          <div className="p-6">
+          <a href="#" className="group block">
+  <div className="relative h-[350px] sm:h-[450px]">
+    <Image
+      src="https://i.imgur.com/TvgTExH.jpg"
+      alt=""
+      width={250}
+      height={250}
+      className="absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-100"
+    />
 
-    return (
-      <main className="flex flex-col mx-auto max-w-2xl p-12 pt-16 pb-6">
-        <div className="grid grid-cols-1 gap-4 p-4">
-          <h1 className="scroll-m-20 text-3xl font-extrabold tracking-tight">
-            Practice Ments #1
-          </h1>
-          <blockquote className="my-6 border-l-2 pl-6 italic">
-          Write a program to calculate the salary of an employee given his basic pay (take input from user).
-          Let HRA be 10 % of basic pay and TA be 5% of basic pay. Let employees pay professional tax as
-          2% of total salary. Calculate total salary and salary payable after deductions.
-          </blockquote>
-          <Input
-            type="number"
-            placeholder="Enter basic pay"
-            value={num1}
-            onChange={(e) => setNum1(e.target.value)}
-          />
-          <div className="flex justify-center">
-            <Button
-              className="w-full"
-              variant="secondary"
-              onClick={() => calculate("first_assignment")}
-            >
-              Calculate
-            </Button>
+    <img
+          src="https://i.imgur.com/TvgTExH.jpg"
+          alt=""
+          width={250}
+          height={250}
+      className="absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-100"
+    />
+  </div>
+
+  <div className="mt-3">
+    <h3
+      className="text-sm text-gray-700 group-hover:underline group-hover:underline-offset-4"
+    >
+     Pepperoni Pizza
+    </h3>
+
+    <p className="mt-1.5 max-w-[40ch] text-xs text-gray-500">
+    Pepperoni offers a slightly spicy, meaty flavor to the dough, sauce, cheese combination. The spice often balances the sweetness in the tomato sauce. Also, it complements the fat in the cheese. Combined, the bite is completely satisfying.
+    </p>
+  </div>
+</a>
           </div>
-          <Button variant="outline" className="w-full">
-            {result && (
-              <p>
-                Total Salary: {result}
-              </p>
-            )}
-          </Button>
-          <Button variant="outline" className="w-full">
-            {result && (
-              <p>
-                Salary Payable: {salaryPayable}
-              </p>
-            )}
-          </Button>
-        </div>
+          <div className="p-4">
+          <a href="#" className="group block">
+  <div className="relative h-[350px] sm:h-[450px]">
+    <img
+          src="https://i.imgur.com/fyjCkQF.jpg"
+          alt=""
+          width={250}
+          height={250}
+      className="absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100"
+    />
+
+    <img
+          src="https://i.imgur.com/fyjCkQF.jpg"
+          alt=""
+          width={250}
+          height={250}
+      className="absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0"
+    />
+  </div>
+
+  <div className="mt-3">
+    <h3
+      className="text-sm text-gray-700 group-hover:underline group-hover:underline-offset-4"
+    >
+      Pancake
+    </h3>
+
+    <p className="mt-1.5 max-w-[40ch] text-xs text-gray-500">
+    A pancake is a thin, flat, circular piece of cooked batter made from milk, flour, and eggs. Pancakes are often rolled up or folded and eaten hot with a sweet or savoury filling inside.
+    </p>
+  </div>
+</a>
+          </div>
+          <div className="p-6">
+          <a href="#" className="group block">
+  <div className="relative h-[350px] sm:h-[450px]">
+    <img
+          src="https://i.imgur.com/eBUfjmA.jpg"
+          alt=""
+          width={250}
+          height={250}
+      className="absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0"
+    />
+
+    <img
+        src="https://i.imgur.com/eBUfjmA.jpg"
+        alt=""
+        width={250}
+        height={250}
+      className="absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100"
+    />
+  </div>
+
+  <div className="mt-3">
+    <h3
+      className="text-sm text-gray-700 group-hover:underline group-hover:underline-offset-4"
+    >
+      Small Headphones
+    </h3>
+
+    <p className="mt-1.5 max-w-[40ch] text-xs text-gray-500">
+    A rich and creamy whole-wheat pasta dish filled layer by layer with refreshingly fresh onions and garlic, lathered in a succulent sauce and topped with imported, premium quality mozzarella.
+    </p>
+  </div>
+</a>
+          </div>
       </main>
     );
   }
