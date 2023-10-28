@@ -17,7 +17,7 @@ export function Navigation() {
   return (
     <NavigationMenu>
       <Avatar className="mx-auto max-w-7xl flex flex-1 justify-items-start">
-        <Link className="pl-6 xl:pl-0 pt-1 text-xl font-sans font-bold" href="/"> Autisitc Recipes </Link>
+        <Link className="pl-6 xl:pl-0 pt-1 text-xl font-sans font-bold" href="/">Recipes</Link>
       </Avatar>
         <NavigationMenuList>
           <NavigationMenuItem>

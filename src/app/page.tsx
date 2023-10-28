@@ -1,6 +1,5 @@
 import React from "react";
 import { Separator } from "@/components/ui/separator"
-import Card from "@/app/ments/cards/page"
 
 export default function Home() {
   return (
@@ -11,7 +10,6 @@ export default function Home() {
       </div>
       <Separator className="my-4" />
       <div className="flex h-5 items-center space-x-4 text-sm">
-        <Card />
         <a href="/ments/first">All recipes</a>
         <Separator orientation="vertical" />
         <a href="/ments/second">Pepe</a>
